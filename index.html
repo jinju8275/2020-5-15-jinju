@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2만원의 행복</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+
+			* {margin: 0; padding: 0;
+				font-family: 'Noto Sans KR', sans-serif;
+				box-sizing: border-box; color:gray;}
+
+		.bg-header{ background: url('img1.jpg');
+					background-size:cover;
+					background-attachment:fixed;
+					}
+
+		.korean {
+			font-weight: lighter;
+			}
+
+		html, body {scroll-behavior: smooth;}
+
+		nav {
+			position: relative;
+		}
+
+
+		nav ul{	position: absolute;
+				right: 15%;
+				height: 44px;
+				}
+
+		nav ul li{margin: auto;
+					list-style-type: none;
+					width: 200px; height: 44px;
+					text-align: center;
+					line-height: 44px;
+					float: left;}
+
+		nav ul li::after {
+			display: block;
+			content: "";
+			clear: both;
+		}
+
+
+		nav ul li a{display: inline-block;
+					text-decoration: none;
+					font-size: 0.8em;
+					color: white;
+				}
+
+		.logo{height: 44px; line-height: 44px;
+			display: inline-block;
+			width: 30px;
+			text-align: center;
+			margin-top: 10px;
+			position: absolute;
+			left:15%;
+			}
+
+
+
+		body{margin:0;}
+		
+		header{width: 100%;
+				margin: auto;
+				height: 900px;
+				margin-bottom: 200px;
+				position: relative;
+			}
+
+		header h1{margin:0;
+				font-size: 500%;
+				color: white; 
+				text-align: center;
+				font-family: 'Lobster', cursive;
+				font-weight: lighter;
+				position: absolute;
+				top:45%;
+				left:40%;
+				transform:translate(-50%,-50%); 
+				}
+
+				.btn-wrap{text-align: center;}
+
+				.btn1{
+					width:300px; height: 50px;
+					line-height: 25px;
+					background-color: white;
+					color: #4d4642;
+					box-sizing: border-box;
+					font-size: 25px;
+					cursor: pointer;
+					text-align: center;
+					border-color: #4d4642;
+					border-radius: 5px;
+					border-width: 0.5px;
+
+					
+				}
+
+				.btn1:hover{background-color: #4d4642;
+					color: white;
+					transition: all .5s ease;
+							}
+
+				.btn1:hover a{color: white}
+
+		h2{margin:0;
+			text-align: center;
+			margin-bottom: 50px;
+			font-size: 2.4em;
+			font-family: 'Lobster', cursive;
+			font-weight: lighter;
+			color: #4d4642;}
+
+		h3{margin:0;
+			text-align: center;
+			margin-bottom: 50px;
+			font-size: 2.4em;
+			font-family: 'Lobster', cursive;
+			color: #4d4642;}
+
+		h4{margin:0;
+			text-align: center;
+			margin-bottom: 10px;
+			font-size: 6em; color:black;}
+
+		h5{margin:0;
+			text-align: center;
+			margin-bottom: 50px;
+			font-size: 1em; color:black;}
+
+		h6{margin:0;	
+			font-size: 1em;
+			color: gray;
+			font-weight: normal;}
+
+
+		img{display: block; width: 100%;}
+
+		p{margin:0;
+			line-height: 26px;
+			letter-spacing: 0.3px;
+			}
+
+
+		section{width: 900px; margin: auto;
+				margin-bottom: 300px;
+				}
+
+		section div a {text-decoration: none;
+						display: inline-block;
+						color: gray;
+						font-style: italic;
+						}
+
+		footer{width: 100%; margin: auto;
+				text-align: center;
+				height: 700px;
+
+				background: url('img1.jpg');
+				background-size:cover;
+				background-attachment:fixed;
+				color: white;
+				}
+
+		footer * {
+			color:white;
+		}
+		
+
+		.band-banner1{background:url(img12.jpg);
+			background-size:cover;
+			background-attachment:fixed;
+			margin: 150px 0;
+			height:800px;}
+
+		.f-section{text-align: center;
+					font-weight: lighter;}
+		.s-section{text-align: center;
+					font-size: 15px;
+					font-weight: lighter;}
+
+		.item-wrap1 {
+				display: flex;}
+
+		.item1{width: 300px;
+			height: 300px;
+			padding:10px;
+			position: relative;}
+
+		.item1 .image-cover {
+			position: absolute;
+			top:10px;
+			width:280px;
+			height:280px;
+			transition: all .5s ease;
+			background: rgba(255,255,255,0);
+		}
+		.item1 .image-cover p {
+			text-align: center;
+			line-height: 280px;
+			opacity: 0;
+			transition: all .5s ease;
+		}	
+		.item1 .image-cover p a {
+			text-decoration: none;
+						display: inline-block;
+						color: black;
+						font-style:normal;
+						font-size:20px;
+		}
+		.item1 .image-cover:hover {
+			background: rgba(255,255,255,.7);
+		}
+		.item1 .image-cover:hover p {
+			opacity:.5;
+		}
+		.item1 img {
+			width:100%;}
+
+		.band-banner2{background: url(img13.jpg);
+			background-size:cover;
+			background-attachment:fixed;
+			margin: 150px 0;
+			height:800px;}
+		
+		.item-wrap2 {
+				display: flex;}
+
+		.item2{width: 500px;
+			height: 320px;
+			padding:10px;}
+
+		.item-wrap3 {height: 50px;
+				display: flex;
+				}
+
+		.item3{width: 500px;
+			height: 50px;
+			padding:5px;
+			text-align: center;
+			line-height: 50px;
+			
+			}
+
+		.band-banner3{background: url(img14.jpg);
+			background-size:cover;
+			background-attachment:fixed;
+			margin: 150px 0;
+			height:800px;}
+
+		div ol li {list-style-type: circle;
+					list-style-position: inside;}
+
+
+			.btn2{
+					width:300px; height: 50px;
+					line-height: 25px;
+					background-color: white;
+					color: #4d4642;
+					box-sizing: border-box;
+					font-size: 25px;
+					cursor: pointer;
+					text-align: center;
+					border-color: #4d4642;
+					border-radius: 5px;
+					border-width: 0.5px;
+
+					
+				}
+
+				.btn2:hover{background-color: #4d4642;
+					color: white;
+					transition: all .5s ease;
+							}
+
+				.btn2:hover a{color: white}
+
+		.final-section {text-align: center;
+						font-weight: lighter;}
+
+
+
+	</style>
+</head>
+<body>
+	
+	<header class="bg-header">
+		<nav>
+		<div class="logo">
+			<a href="index.html">
+				<img src="img0.png">
+			</a>
+		</div>
+		<ul>
+			<li>
+				<a href="#d1">About Cube Candle</a>
+			</li>
+			<li>
+				<a href="#d2">Candle DIY</a>
+			</li>
+			<li>
+				<a href="#d3">Making Candle</a>
+			</li>
+		</ul>
+		</nav>
+		<h1>Melting Candle DIY</h1>
+	</header>
+	<section id="d1">
+		<h2>About Cube Candle</h2>
+		<div class="f-section">
+		<p class="korean">우리는 보통 캔들하면, 심지에 붙을 붙여 녹이는 캔들을 생각합니다<br>하지만 아이나, 애완동물이 있는 집에서는 불을 붙이기가 걱정이 되죠<br>그래서 불을 피우지 않고도 캔들을 녹일 수 있는 캔들 워머가 나오게 되었습니다<br>워머는 열로 캔들을 천천히 녹이면서 향을 퍼지게 하기 때문에 더 이상 심지에 불을 붙이지 않아도 됩니다<br>큐브 캔들은 캔들 왁스를 담을 용기가 필요 없고, 꼭 큐브 모양일 필요도 없기 때문에 다양한 형태의 캔들을 만들 수 있습니다<br><br><br>자, 이제 내 맘대로 미니 큐브 캔들을 만들어볼까요?</p>
+		<br>
+		<br>
+		<br>
+			
+		</div>
+		<img src="img2.png">
+
+		<div class="btn-wrap">
+			<br><br>
+		<button class="btn1"><a href="index1.html">BUY NOW</a></button>
+		</div>
+			
+	</section>
+
+	<div class="band-banner1"></div>
+
+	<section id="d2">
+		<h3>Candle DIY</h3>
+	<div class="s-section">
+		<br>
+		<p>패키지의 몰드 옵션은 선택 가능합니다<br>큐브 캔들을 클릭하면 더 많은 사진을 볼 수 있어요</p>
+		<br>
+	</div>
+		<div class="item-wrap1">
+			<div class="item1">
+					<img src="img4.png"/>
+					<div class="image-cover">
+						<p><a href="#m1">More Images</a></p>
+					</div>
+			</div>
+			<div class="item1">
+				<img src="img5.png"/>
+				<div class="image-cover">
+					<p><a href="#m2">More Images</a></p>
+				</div>
+		</div>
+			<div class="item1">
+				<img src="img6.png"/>
+				<div class="image-cover">
+					<p><a href="#m3">More Images</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="item-wrap3">
+			<div class="item3">
+					Mini Cube Candle
+			</div>
+			<div class="item3">
+				Mini Heart Candle
+			</div>
+			<div class="item3">
+				Mini Bear Candle
+			</div>
+		</div>
+	</section>
+	<div class="band-banner2"></div>
+
+
+	
+	<section id="d3">
+	<h3>Making Candle</h3>
+		<div class="item-wrap2">
+			<div class="item2">
+				<img src="img7.jpg"/>
+			</div>
+			<div class="item2">
+				<h6>1. 재료 준비하기</h6>
+				<p class="korean">
+					<br>
+					- 패키지 구성품</p>
+
+					<ol>
+						<li class="korean">소이왁스</li>
+						<li class="korean">향료(오일)</li>
+						<li class="korean">몰드</li>
+						<li class="korean">나무젓가락</li>
+						<li class="korean">종이컵</li>
+						<li class="korean">캔들을 담아놓을 용기</li>
+					</ol>
+
+			</div>
+		</div>
+
+		<div class="item-wrap2">
+			<div class="item2">
+				<h6>2. 종이컵에 왁스 부어주기</h6>
+				<p class="korean">
+					<br><br>저는 처음에 얼마나 넣어야 할지 몰라서 2/3 정도 넣었는데, 왁스가 녹으면서 부피가 줄어드니 종이컵 가득 담아도 괜찮아요</p>
+			</div>
+			<div class="item2">
+				<img src="img8.jpg"/>
+			</div>
+		</div>
+
+		<div class="item-wrap2">
+			<div class="item2">
+				<img src="img9.jpg"/>
+			</div>
+			<div class="item2">
+				<h6>3. 전자레인지에 30초씩 돌려주기</h6>
+				<p class="korean"><br><br>찾아보니 중탕하는 도구가 따로 있더라구요~ 하지만 우리는 매일 만들게 아니니까 그냥 전자레인지를 사용해 봅시다. 전자레인지가 없다면 인덕션 위에서 해도 괜찮아요~!<br><br>2분 돌리고 왁스가 덩어리져있으면 나무젓가락으로 풀어주고 30씩 더 돌려줍니다. 왁스가 다 녹으면 준비 끝!</p>
+			</div>
+		</div>
+
+		<div class="item-wrap2">
+			<div class="item2">
+				<h6>4. 조금 식히고 오일 넣어주기</h6>
+				<p class="korean"><br><br>오일을 넣는 권장 온도는 65도 정도 된다고 합니다. 저는 집에 굴러다니는 온도계가 있어서 사용하였지만, 그냥 전자레인지에서 꺼낸 이후 3분 정도 지나면 오일을 넣어주면 됩니다.<br><br> 권장하는 온도에서 오일을 부어야 발향이 잘 된다고 하네요</p>
+			</div>
+			<div class="item2">
+				<img src="img10.jpg"/>
+			</div>
+		</div>
+
+		<div class="item-wrap2">
+			<div class="item2">
+				<img src="img11.jpg"/>
+			</div>
+			<div class="item2">
+				<h6>5. 몰드에 붓고 식혀주기</h6>
+				<p class="korean"><br><br>몰드에 부어주면 끝! 정말 쉽고 간단하죠?<br><br>성격 급한 저는 처음에 막 들이부어서 큐브끼리 붙어버렸지만, 스포이드를 사용하거나 종이컵 끝을 뾰족하게 만들어 천천히 부으면 더 깔끔하게 만들어 줄 수 있습니다. 4~6시간이면 완전히 굳는다고 해요</p>
+			</div>
+		</div>
+	</section>
+	<div class="band-banner3"></div>
+	<section id="m1" class="m">
+		<h4>-</h4>
+		<h5>Mini Cube</h5>
+		<img src="img15.jpg">
+		<br>
+		<img src="img17.jpg" style="width:49%; float:left;">
+		<img src="img16.jpg" style="width:49%; float:right;">
+		<img src="img18.jpg" style="padding-top: 25px;">
+	</section>
+	<section id="m2" class="m">
+		<h4>-</h4>
+		<h5>Mini Heart</h5>
+		<img src="img19.jpg">
+		<br>
+		<img src="img21.jpg" style="width:49%; float:left;">
+		<img src="img22.jpg" style="width:49%; float:right;">
+		<img src="img20.jpg" style="padding-top: 25px;">
+	</section>
+	<section id="m3" class="m">
+		<h4>-</h4>
+		<h5>Mini Bear</h5>
+		<img src="img23.jpg">
+		<br>
+		<img src="img25.jpg" style="width:49%; float:left;">
+		<img src="img26.jpg" style="width:49%; float:right;">
+		<img src="img24.jpg" style="padding-top: 25px;">
+	</section>
+
+
+
+	<section>
+
+		<h4>+</h4>
+
+		<div class="btn-wrap">
+			<p class="korean">
+			타블렛 몰드를 사용하여 캔들을 만들면<br>
+			인테리어 소품처럼 활용할 수 있고<br>
+			방향제 효과도 있어요<br><br>
+
+			타블렛 캔들 보러가기↓<br><br>
+			</p>
+		<button class="btn2"><a href="index2.html">Tablet Candle</a></button>
+		</div>
+
+
+	</section>
+
+
+
+
+	<section>
+		<div class="final-section">
+		<h4>-</h4>
+		<h5>DIY Package</h5>
+		<p>*이런 분들에게 추천해요*<br><br>
+		손으로 무언가를 만드는 걸 좋아하는 분<br>
+		정성이 담긴 선물을 하고 싶은 분<br>
+		인테리어 소품을 만들어보고 싶은 분<br>
+		비싼 캔들 저렴하게 만들어 보고 싶은 분<br><br><br>
+
+			</p>
+		</div>
+
+		<img src="img28.jpg">
+		
+	</section>
+	<footer>
+		<p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>-<br>HKNU_Design_Jin Ju, Lee<br>wlswn8275@naver.com</p>
+	</footer>
+	<a style="display:scroll;
+				position:fixed;
+				bottom:60px;
+				right:130px;" rel="nofollow"
+		href="#" >
+		<img src="point1.png" style="width: 45px;height: 45px">
+		</a>
+
+</body>
+</html>

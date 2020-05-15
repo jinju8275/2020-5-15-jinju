@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2만원의 행복 구매하기</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+
+			* {margin: 0; padding: 0;
+				font-family: 'Noto Sans KR', sans-serif;
+				box-sizing: border-box; color:gray;}
+
+		.korean {
+			font-weight: lighter;
+			}
+
+		html, body {scroll-behavior: smooth;}
+
+		nav {
+			position: relative;
+		}
+
+
+		nav ul{	position: absolute;
+				right: 15%;
+				height: 44px;
+				}
+
+		nav ul li{margin: auto;
+					list-style-type: none;
+					width: 200px; height: 44px;
+					text-align: center;
+					line-height: 44px;
+					float: left;}
+
+		nav ul li::after {
+			display: block;
+			content: "";
+			clear: both;
+		}
+
+
+		nav ul li a{display: inline-block;
+					text-decoration: none;
+					font-size: 0.8em;
+					color: #4d4642;
+				}
+
+		.logo{height: 44px; line-height: 44px;
+			display: inline-block;
+			width: 30px;
+			text-align: center;
+			margin-top: 10px;
+			position: absolute;
+			left:15%;
+			}
+
+
+
+		body{margin:0;}
+		
+		header{width: 100%;
+				margin: auto;
+				height: 50px;
+				margin-bottom: 200px;
+				position: relative;
+			}
+
+
+		h2{margin:0;
+			text-align: center;
+			margin-bottom: 50px;
+			font-size: 2.4em;
+			font-family: 'Lobster', cursive;
+			font-weight: lighter;
+			color: #4d4642;}
+
+		h3{margin:0;
+			text-align: center;
+			margin-bottom: 50px;
+			font-size: 2.4em;
+			font-family: 'Lobster', cursive;
+			color: #4d4642;}
+
+		h4{margin:0;
+			text-align: center;
+			margin-bottom: 10px;
+			font-size: 6em; color:black;}
+
+		h5{margin:0;
+			text-align: center;
+			margin-bottom: 50px;
+			font-size: 1em; color:black;}
+
+		h6{margin:0;	
+			font-size: 1em;
+			color: gray;
+			font-weight: normal;}
+
+
+		img{display: block; width: 100%;}
+
+		p{margin:0;
+			line-height: 26px;
+			letter-spacing: 0.3px;
+			}
+
+
+		section{width: 900px; margin: auto;
+				margin-bottom: 300px;
+				}
+
+		section div a {text-decoration: none;
+						display: inline-block;
+						color: gray;
+						font-style: italic;
+						}
+
+		footer{width: 100%; margin: auto;
+				text-align: center;
+				height: 500px;
+				
+				}
+
+		footer * {
+			text-align: center;
+			color:#4d4642;
+		}
+		
+
+
+		.f-section{text-align: center;
+					font-weight: lighter;}
+		.s-section{text-align: center;
+					font-size: 15px;
+					font-weight: lighter;}
+
+		.item-wrap1 {
+				display: flex;}
+
+		.item1{width: 300px;
+			height: 300px;
+			padding:10px;
+			position: relative;}
+
+		.item1 .image-cover {
+			position: absolute;
+			top:10px;
+			width:280px;
+			height:280px;
+			transition: all .5s ease;
+			background: rgba(255,255,255,0);
+		}
+		.item1 .image-cover p {
+			text-align: center;
+			line-height: 280px;
+			opacity: 0;
+			transition: all .5s ease;
+		}	
+		.item1 .image-cover p a {
+			text-decoration: none;
+						display: inline-block;
+						color: black;
+						font-style:normal;
+						font-size:20px;
+		}
+		
+		
+		}
+		.item1 img {
+			width:100%;}
+
+
+		
+		.item-wrap2 {
+				display: flex;
+		}
+
+		.item2{width: 500px;
+			height: 320px;
+			padding:10px;}
+
+		.item-wrap3 {height: 50px;
+				display: flex;
+				}
+
+		.item3{width: 500px;
+			height: 50px;
+			padding:5px;
+			text-align: center;
+			line-height: 50px;
+			
+			}
+
+
+
+		div ol li {list-style-type: circle;
+					list-style-position: inside;}
+
+		.final-section {text-align: center;
+						font-weight: lighter;}
+
+
+
+	</style>
+</head>
+<body>
+	
+	<header>
+		<nav>
+		<div class="logo">
+			<a href="index1.html">
+				<img src="img0.png">
+			</a>
+		</div>
+		<ul>
+			<li>
+				<a href="#d1">About Package</a>
+			</li>
+			<li>
+				<a href="#d2">Mold Options</a>
+			</li>
+			<li>
+				<a href="#d3">Caution</a>
+			</li>
+		</ul>
+		</nav>
+
+
+	</header>
+
+	<section>
+		<div class="item-wrap2">
+			<div class="item2">
+				<img src="img27.jpg"/>
+			</div>
+			<div class="item2">
+				<img src="img29.png"/>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section id="d1">
+		<h2>About Package</h2>
+		<div class="f-section">
+		<p class="korean">2만원으로 나만의 미니 캔들을 만들어 보세요
+			<br>Pakage Box에 예쁘게 담아 배송해드립니다<br>
+			구성품: 소이왁스, 몰드, 종이컵, 젓가락, 유리병, 향료(오일)
+		</p>
+		<br>
+		<br>
+		<br>
+			
+		</div>
+		<img src="img3.png">
+			
+	</section>
+
+
+
+
+
+	<div class="band-banner1"></div>
+
+	<section id="d2">
+		<h3>Mold Options</h3>
+	<div class="s-section">
+		<br>
+		<p>몰드를 선택해주세요<br>
+		복수 선택 가능 (+3000)</p>
+		<br>
+	</div>
+		<div class="item-wrap1">
+			<div class="item1">
+					<img src="img4.jpg"/>
+					
+			</div>
+			<div class="item1">
+				<img src="img5.jpg"/>
+				
+		</div>
+			<div class="item1">
+				<img src="img6.jpg"/>
+				
+			</div>
+		</div>
+		<div class="item-wrap3">
+			<div class="item3">
+				<input type="checkbox" id="ck1">
+				<label for="ck1">Tablet Mold</label>
+		
+			</div>
+			<div class="item3">
+				<input type="checkbox" id="ck1">
+				<label for="ck1">Mini Heart Mold</label>
+				
+			</div>
+			<div class="item3">
+				<input type="checkbox" id="ck1">
+				<label for="ck1">Mini Bear Mold</label>
+			
+			</div>
+					
+		</div>
+	</section>
+	
+
+
+
+
+
+	<section id="d3">
+
+	<h3>Caution!</h3>
+
+	<div class="f-section">
+	몰드 자국이나 기포 자국이 생길 수 있으나 그것은 제작과정에서 자연스럽게 생기는 현상으로 불량이 아닙니다<br>
+	아이나 애완동물이 먹지 않도록 주의해 주세요<br>
+	상품에 이상이 있을 경우에는 교환이나 환불을 도와드리고 있으니 하단의 이메일로 문의주세요<br>
+
+	
+		
+	</section>
+	</div>
+
+
+
+
+
+
+
+	<footer>
+		<p><br><br><br><br><br><br><br><br>
+			<img src="img30.png">
+			<br>HKNU_Design_Jin Ju, Lee<br>wlswn8275@naver.com</p>
+	</footer>
+	<a style="display:scroll;
+				position:fixed;
+				bottom:60px;
+				right:130px;" rel="nofollow"
+		href="#" >
+		<img src="point1.png" style="width: 45px;height: 45px">
+		</a>
+
+</body>
+</html>
